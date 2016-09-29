@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+{% load staticfiles %}
+
     <head>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="{% static "js/jquery.min.js"%}"></script>
+        <script type="text/javascript" src="{% static "js/jquery-ui.min.js"%}"></script>
         <style>
             html, body {
                 padding: 0;
@@ -134,6 +136,6 @@
 		</div>
         <div id="timer"></div>
 		<div id="stats"></div>
-        <script type="text/javascript" src="{{ STATIC_URL }}js/chess.js"></script>
+        <script type="text/javascript" src="{% static "js/chess.js"%}"></script>
     </body>
 </html>
